@@ -1,0 +1,187 @@
+/*
+    Created on : 9 févr. 2026, 00:53:38
+    Author     : lisy
+*/
+
+/* Styles généraux */
+body {
+    padding-top: 50px;
+    font-family: 'Arial', sans-serif; /* Police cohérente avec les autres pages */
+    background-color: #f8f9fa; /* Fond léger uniforme */
+}
+
+/****************************************
+* Jumbotron (section principale)
+****************************************/
+.jumbotron {
+    background-color: #fff5e6; /* Fond crème-orange comme dans CV et Accueil */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.jumbotron h1 {
+    color: #333; /* Texte sombre pour contraste */
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.jumbotron p {
+    color: #555; /* Texte secondaire */
+    line-height: 1.6;
+}
+
+/******************************************
+* Informations de contact
+******************************************/
+.contact-info h2 {
+    color: #ff6600; /* orange comme les titres dans CV */
+    margin-bottom: 1rem;
+}
+
+.contact-item {
+    margin-bottom: 1rem;
+}
+
+.contact-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333; /* Texte sombre */
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.contact-item a:hover,
+.contact-item a:focus {
+    color: #ff6600; /* Accent orange au survol/focus */
+    outline: 2px solid #ff6600; /* Focus visible pour accessibilité */
+}
+
+.contact-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    filter: grayscale(1);
+    transition: filter 0.3s;
+}
+
+.contact-item a:hover .contact-icon,
+.contact-item a:focus .contact-icon {
+    filter: sepia(1) hue-rotate(25deg) saturate(2); /* Effet orange au survol, comme dans CV */
+}
+
+/******************************************
+* Formulaire de contact
+******************************************/
+.contact-form h2 {
+    color: #ff6600; /* Accent orange cohérent */
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+.form-control:focus {
+    border-color: #ff6600; /* Bordure orange au focus */
+    box-shadow: 0 0 0 0.2rem rgba(255, 102, 0, 0.25); /* Ombre orange légère */
+    outline: none; /* Supprimer l'outline par défaut */
+}
+
+.btn-primary {
+    background-color: #ff6600; /* Bouton orange comme dans Accueil */
+    border-color: #ff6600;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #e55a00; /* Orange plus foncé au survol */
+    border-color: #e55a00;
+    outline: 2px solid #ff6600; /* Focus visible */
+}
+
+/******************************************
+* Navigation (overrides Bootstrap, identique à CV et Accueil)
+******************************************/
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff; /* Blanc par défaut */
+}
+
+.navbar-dark .navbar-nav .active .nav-link,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: #ff6600; /* Orange au survol/actif/focus */
+    outline: 2px solid #ff6600; /* Focus visible */
+}
+
+/******************************************
+* Footer
+******************************************/
+footer {
+    background-color: #333; /* Fond sombre pour contraste */
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 2rem;
+}
+
+footer h2 {
+    color: #ff6600; /* Titres en orange */
+}
+
+footer p {
+    color: #ccc; /* Texte secondaire clair */
+}
+
+footer a {
+    color: #ffa500; /* Liens en orange clair */
+}
+
+footer a:hover,
+footer a:focus {
+    color: #ff6600; /* Plus vif au survol/focus */
+    outline: 2px solid #ff6600; /* Focus visible */
+}
+
+footer .btn-secondary {
+    background-color: #ff6600; /* Boutons secondaires en orange */
+    border-color: #ff6600;
+    color: #fff;
+}
+
+footer .btn-secondary:hover,
+footer .btn-secondary:focus {
+    background-color: #e55a00;
+    border-color: #e55a00;
+    outline: 2px solid #ff6600;
+}
+
+#copyright {
+    color: #aaa; /* Gris clair pour le copyright */
+    font-size: 0.9em;
+}
+
+/* Responsivité (ajustements pour mobile, cohérents avec les autres pages) */
+@media (max-width: 768px) {
+    .jumbotron {
+        text-align: center; /* Centrage sur mobile */
+    }
+    .contact-item a {
+        flex-direction: column; /* Empilement vertical */
+        text-align: center;
+    }
+    .contact-icon {
+        margin-bottom: 5px; /* Espacement pour les icônes */
+    }
+}

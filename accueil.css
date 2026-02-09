@@ -1,0 +1,128 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 9 févr. 2026, 00:53:38
+    Author     : lisy
+*/
+body {
+    padding-top: 50px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/****************************************
+* Jumbotron (section principale)
+****************************************/
+.jumbotron {
+    background-color: #fff5e6;
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.jumbotron h1 {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.jumbotron p {
+    color: #555;
+    line-height: 1.6;
+}
+
+#maPhoto {
+    width: 150px;
+    height: auto;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border: 3px solid #ffe0b3; /* Bordure orange pâle */
+    border-radius: 8px; /* Coins arrondis */
+}
+
+/* Bouton principal */
+.btn-primary {
+    background-color: #ff6600;
+    border-color: #ff6600;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e55a00;
+    border-color: #e55a00;
+}
+
+/******************************************
+* Navigation (overrides Bootstrap)
+******************************************/
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff; /* Blanc par défaut */
+}
+
+.navbar-dark .navbar-nav .active .nav-link,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ff6600;
+}
+
+/******************************************
+* Footer
+******************************************/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 2rem;
+}
+
+footer h2 {
+    color: #ff6600;
+}
+
+footer p {
+    color: #ccc;
+}
+
+footer a {
+    color: #ffa500;
+}
+
+footer a:hover {
+    color: #ff6600;
+}
+
+footer .btn-secondary {
+    background-color: #ff6600;
+    border-color: #ff6600;
+    color: #fff;
+}
+
+footer .btn-secondary:hover {
+    background-color: #e55a00;
+    border-color: #e55a00;
+}
+
+/* Copyright */
+#copyright {
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .jumbotron {
+        text-align: center;
+    }
+    #maPhoto {
+        float: none;
+        display: block;
+        margin: 0 auto 1rem;
+    }
+    .jumbotron h1 {
+        font-size: 2em;
+    }
+}

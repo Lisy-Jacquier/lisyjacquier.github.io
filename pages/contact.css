@@ -1,8 +1,6 @@
 /*
-    Portfolio Contact - Thème orange
-    Créé le : [Date actuelle]
-    Auteur : Lisy Jacquier
-    Cohérent avec cv.css et accueil.css
+    Created on : 9 févr. 2026, 00:53:38
+    Author     : lisy
 */
 
 /* Styles généraux */
@@ -38,7 +36,7 @@ body {
 * Informations de contact
 ******************************************/
 .contact-info h2 {
-    color: #ff6600; /* Accent orange comme les titres dans CV */
+    color: #ff6600; /* orange comme les titres dans CV */
     margin-bottom: 1rem;
 }
 
@@ -129,7 +127,7 @@ body {
 }
 
 /******************************************
-* Footer (identique à CV et Accueil)
+* Footer
 ******************************************/
 footer {
     background-color: #333; /* Fond sombre pour contraste */
